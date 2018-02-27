@@ -1,0 +1,190 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.nav li{
+	display: inline-block;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	text-align: center;
+}
+.page1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.page1{
+	width: 100%;
+	height: 100vh;
+	background: url(img/backgroundpic.jpg) no-repeat center center; /*responsive bckgrnd img */           
+	background-size: cover;
+	background-attachment: fixed;                  /* parallax effect 1 */
+	color: white;
+	padding: 2rem;
+}
+
+.nav a{
+	color: white;
+}
+.page1 .page1content a{
+	color: #00ff6c;
+	padding: 0.5rem 2.5rem;
+	border: 2px solid #00ff6c;
+}
+.page1 .page1content h1{
+	font-size: 3rem;
+}
+
+.page2{
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+.page2 h1{
+	color: #00ff6c;
+	margin: 0;
+}
+.page2 .blackbox{
+	padding:3rem;
+}
+.blackboxdata{
+	border:2px solid #00ff6c;
+	padding: 1.5rem;
+}
+
+.page3{
+	width: 100%;
+}
+hr{
+	width:20%;
+	border: 1px solid #00ff6c; 
+	margin-top: 4rem;
+	margin-bottom: 1.5rem;
+}
+.page4{
+	width: 100%;
+	height: 60vh;
+	background-color: #00ff6c;
+	color: white;
+}
+.page4 a{
+	color: black;
+	padding: 0.5rem 2.5rem;
+	border: 2px solid BLACK;
+}
+.page4 h1{
+	margin: 0;
+	font-size: 3rem;
+}
+
+.page5{
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+.page5 a{
+	color: white;
+}
+.page5 p{
+	margin: 0;
+}
+.footer{
+	padding: 2rem;
+}
+
+/*************** flexbox ***************/
+
+.gallery{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.bottomlinks{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.page4{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/***************** mobile **************/
+@media screen and (max-width: 480px){
+	.gallery img{
+		width:100%;
+		height: auto;
+	}
+	.bottomlinks{
+		flex-wrap: wrap;
+	}
+	
+	.page2{
+		height: auto;
+	}
+	.page4{
+		padding: 1.2rem;
+	}
+}
+
+/***************** tablets **************/
+@media screen and (min-width: 481px) and (max-width: 768px){
+	.gallery img{
+		width:50%;
+		height: auto;
+	}
+	.page2{
+		height: auto;
+	}
+	.footer{
+		padding:2rem 4rem;
+	}
+}
+
+/******************* deskop ******************/
+@media screen and (min-width:769px ){
+	.gallery img{
+		width:33.33%;
+		height: auto;
+	}
+	.footer{
+		padding:2rem 10rem;
+	}
+	.page2{
+		min-height: 70vh;
+	}
+	.page2 .blackbox{
+	padding:8rem;
+}
+
+}
+
+
+
+
+
+
+
+
